@@ -1,0 +1,110 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/contacts">
+        <img src="../../assets/logo.png" class="logo" alt="Responsive image">
+      </a>
+<div class="ambimax-media">
+      <div class="dropdown flex" appNav>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+          <div [ngClass]="{ 'menu': isAddButton, 'ambimaxNav': !isAddButton }" class=" navbar-nav ml-auto">
+
+              <div class="btn-group mr-3">
+          <a class="nav-item dropdown" routerLinkActive="active" routerLink="/website" (click)=themeSelected($event) >Tinklalapių kūrimas</a>
+
+          <li class="dropdown aaa" appDropdown>
+              <a style="cursor: pointer;" class="dopdown-toggle" role="button"><p class="ambimax-icon"><fa-icon [icon]="faArrowDown"></fa-icon></p></a>
+        <ul class="dropdown-menu aab">
+            <li><a style="cursor: pointer;" routerLinkActive="active" routerLink="/websites" (click)=themeSelected($event)>
+              <p class="aac">Rinkitės dizainą</p>
+              </a>
+              </li>
+        </ul>
+        </li>
+              </div>
+
+
+          <!-- <div class="btn btn-primary dropdown-toggle-split dropdown">
+              <button class="btn btn-primary dropdown-toggle-split dropdown" appDropdown></button>
+              <a class="nav-item dropdown-menu"  appDropdown></a>
+          </div> -->
+          
+          
+          <a class="nav-item" routerLinkActive="active" routerLink="/app" (click)=themeSelected($event) >Mobilios programėlės- apsai</a>
+          <a class="nav-item" routerLinkActive="active" routerLink="/careers" (click)=themeSelected($event) >Ieškantiems darbo</a>
+          <a class="nav-item" routerLinkActive="active" routerLink="/contacts" (click)=themeSelected($event) >Kontaktai</a>
+        </div>
+          </div>
+
+          <button type="button" class="btn-noStyle dropdown-togle" data-toggle="dropdown">
+              <div class="ambimax-burger" data-toggle="dropdown">
+                  <span [ngClass]="{ 'active': isAddButton, 'cross': !isAddButton  }" (click)="submit()"></span>
+                  <span [ngClass]="{ 'active': isAddButton, 'cross': !isAddButton  }" (click)="submit()"></span>
+                </div>
+          </button>
+        </div>
+</div>
+      <!-- <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li routerLinkActive="active" routerLink="/website"  class="nav-item"><a class="nav-link">Tinklalapių kūrimas</a></li>
+          <li routerLinkActive="active" routerLink="/app"><a class="nav-link">Mobilios programėlės</a></li>
+          <li routerLinkActive="active" routerLink="/careers"><a class="nav-link">Karjera</a></li>
+          <li routerLinkActive="active" routerLink="/contacts"><a class="nav-link">Kontaktai</a></li>
+        </ul>
+      </div> -->
+    </div>
+  </nav>
+
+<!-- 
+  <nav style="position:absolute; z-index:55; width: 100%" class="navbar navbar-expand-lg navbar-dark scrolling-navbar theme-color-background">
+    <a class="logo navbar-brand" 
+    routerLink="landing-page"
+    href="#">
+      <img class="logo logo-size" src="http://ambimax.lt/wp-content/uploads/2019/03/logo.png" alt="logo">
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" routerLinkActive="active">
+          <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+            <a class="nav-link"
+            routerLink="apie-mus"
+            
+            >Apie mus
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+            <a class="nav-link"
+            routerLink="paslaugos"
+            
+            >Paslaugos</a>
+          </li>
+          <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+            <a class="nav-link"
+            routerLink="transporto-nuoma"
+            routerLinkActive="active"
+            >Transporto nuoma</a>
+          </li>
+          <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+            <a class="nav-link"
+            routerLink="projektai"
+            >Projektai</a>
+          </li>
+          <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+            <a class="nav-link"
+            routerLink="naujienu-skiltis"
+            >Naujienų skiltis</a>
+          </li>
+          <li class="nav-item waves-light" routerLinkActive="active" mdbWavesEffect>
+            <a class="nav-link"
+            routerLink="kontaktai"
+            >Kontaktai</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     -->
+<!--     
+    <router-outlet></router-outlet> -->

@@ -1,0 +1,40 @@
+
+  <!--Grid column-->
+      
+      <!-- Card -->
+      <div class="card" (click)="onCardClick()">
+
+            <!-- Card image -->
+            <img class="card-img-top" src="{{card.iconUrl}}" alt="Card image cap">
+          
+            <!-- Card content -->
+            <div class="card-body">
+          
+              <!-- Title -->
+              <h4 class="card-title"><a>{{card.description}}</a></h4>
+              <!-- Text -->
+              <p class="card-text">{{card.longDescription}}</p>
+        
+              <a class="btn btn-primary" 
+      (click)="onCardClick()"
+      
+      >Žiūrėti</a>
+<!-- [routerLink]="index" -->
+              <!-- <div class="project-category" [ngSwitch] = "item.category">
+                <div class="category" *ngSwitchCase="'BEGINNER'">Beginner</div>
+              </div> -->
+
+
+
+              <!-- Button -->
+              <!-- <a class="btn btn-primary" 
+              (click)="onItemClick()"
+              [routerLink]="index"
+              >Button</a> -->
+          
+          <!-- Card -->
+        
+            </div>
+            <!--Grid column-->
+            </div>
+        

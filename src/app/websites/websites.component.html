@@ -1,0 +1,71 @@
+<section class="container top">
+
+
+    <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <h1 class="mb-4">Rinkitės vieną iš jau paruošų dizainų</h1>
+      
+        </div>
+      </div>
+<!-- <div class="container">
+    
+            <app-dropdown></app-dropdown>
+    
+            <div class="row">
+             
+                <div ngbDropdown class="d-inline-block">
+                  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Metai</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem (click)="filterCardsByDate('')">Visi</button>
+                    <button ngbDropdownItem (click)="filterCardsByDate('now')">Dabar vykdomi projektai</button>
+                    <button ngbDropdownItem (click)="filterCardsByDate('2019')">2019</button>
+                    <button ngbDropdownItem (click)="filterCardsByDate('2018')">2018</button>
+                    <button ngbDropdownItem (click)="filterCardsByDate('2017')">2017</button>
+                    <button ngbDropdownItem>2016</button>
+                    <button ngbDropdownItem>2015</button>
+                  </div>
+              </div>
+                  <div ngbDropdown class="d-inline-block">
+                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Atlikti darbai</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem (click)="filterCardsByCategory('')">Visi</button>
+                      <button ngbDropdownItem (click)="filterCardsByCategory('BEGINNER')">Statyba</button>
+                      <button ngbDropdownItem (click)="filterCardsByCategory('ADVANCED')" >Gerbuvis</button>
+                      <button ngbDropdownItem>Karjieru kasimas</button>
+                      <button ngbDropdownItem>Generaline ranga</button>
+                    </div>
+                  </div>
+              </div>
+              </div> -->
+              <!-- paginate: config -->
+              <div class="container">
+                  <div class="card-container "> 
+                    
+                      <div class="card-columns">
+                  <app-card
+                  [card]="card" 
+                   *ngFor="let card of items
+                   | paginate:{itemsPerPage: 9, currentPage:p}"
+                   (cardSelected)= "onCardSelected($event)"
+                   >
+                  </app-card>
+                  <!--/.Card-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="container " style="height: 80px;">
+                  <a routerLink="/contacts" class="btn btn-primary px-4 py-3 float-right" >Susisiekime</a>
+              
+            </div>
+    
+                  <div class="container" style="text-align: center">
+                      <pagination-controls
+                       (pageChange)="p=$event"
+                       previousLabel="Ankstesnis"
+                      nextLabel="Toliau">
+
+                      </pagination-controls>
+                </div>
+</section>
+        
