@@ -16,7 +16,7 @@
     "build:client-and-server-bundles": "ng build --prod && ng run website:server:production --bundleDependencies all"
   },
   "engines": {
-    "node": "10.05.2",
+    "node": "10.15.2",
     "npm": "6.11.3"
   },
   "private": true,
